@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1;
+  background: black;
+  color: #FFFFFF;
+  font-weight: 300;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  font-family: Helvetica neue, roboto;
+}
+
+/*Шрифты*/
+  
+.textTTCom18{
+  font-family: 'TT Commons';
+  font-style: normal;
+  text-align: start;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.textTTCom20{
+  font-family: 'TT Commons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.textRed16{
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.textRed24{
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+.graytextinf{
+  opacity: 0.4;
+}
+
+/*----------------------------------------*/
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  margin: 40px;
+  text-align: start;
+}
+
+.photoinfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 805px;
+  width: 322px;
+}
+
+.photosect{
+  max-height: 355px;
+}
+
+.hrenkrasnaya1{
+  position: absolute;
+  width: 21.21px;
+  height: 34.65px;
+  left: 166.5px;
+  top: -10.5px;
+
+  border-radius: 40px;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+
+  background: #F51B1B;
+  transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+}
+
+.hrenkrasnaya2{
+  position: absolute;
+  width: 21.21px;
+  height: 34.65px;
+  left: 155.5px;
+  top: -10.5px;
+
+  border-radius: 40px;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+
+  background: #F51B1B;
+  transform: rotate(45deg);
+}
+
+.flexrow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flexrowend{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.headlogoblock{
+  margin-top: -9px;
+}
+
+.rdclog{
+  width: auto;
+  height: 16px;
+}
+
+.frontlog{
+  width: auto;
+  height: 14.2px;
+}
+
+
+
+.infsect{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 40px;
+  position: absolute;
+  width: 275px;
+  height: 374px;
+  top: 410px;
+  background: #F51B1B;
+  border-radius: 24px 24px 0px 0px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.nameinf{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.namehead{
+  margin-bottom: 8px;
+}
+
+
+.connection_inf{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.connection_block{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.inficons{
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.imgicons{
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.biginfocont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 31px;
+}
+
+.cvinfo {
+  align-items: flex-start;
+  width: 690px;
+  margin: 8px 0 33px 0;
+}
+
+.smallinfcont {
+  border: 1px solid #FFFFFF;
+  min-height: 630px;
+  margin-bottom: 20px;
+}
+
+.skillinfo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 27px 49px 48px 27px;
+}
+
+.skillscont{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+@media (max-width: 360px) {
+  .skillscont{
+    flex-direction: column;
+  }
+
+  .smallinfcont {
+    width: 320px;
+  }
+
+  .cvinfo {
+    align-items: flex-start;
+    width: 320px;
+    margin: 8px 0 33px 0;
+  }
+
+  .headercont{
+    justify-content: start;
+  }
+
+  .headlogoblock{
+    margin-top: -750px;
+  }
+  .photoinfo {
+    margin-top: 70px;
+  }
+  .biginfocont{
+    margin-left: 0px;
+  }
+  .container {
+    margin: 20px;
+  }
+
+  .textTTCom18{
+    font-size: 16px;
+  }
+  
+  .textTTCom20{
+    font-size: 18px;
+  }
+  
+  .textRed16{
+    font-size: 14px;
+  }
+  
+  .textRed24{
+    font-size: 22px;
+  }
+  .infsect{
+    height: 260px;
+  }
+  .photoinfo{
+    height: 690px;
+  }
+  }
+
+.textskhead{
+  margin-right: 72px;
+  margin-bottom: 20px;
+  min-width: 124px;
+}
+
+
+
+.skrow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.skcolumn{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.educatinf{
+  margin-bottom: 20px;
+}
+
+.skarrtxt{
+  margin-right: 32px;
+}
+
+.bordwhite{
+  opacity: 0.4;
+  border: 1px solid #FFFFFF;
+}
+
+.collars{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+}
+.collarblock1{
+  border-radius: 40px;
+  width: 86px;
+  height: 40px;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+.collarblock2{
+  border-radius: 70px;
+  width: 86px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+}
